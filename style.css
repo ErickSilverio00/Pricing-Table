@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(#ffafbd, #ffc3a0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    width: auto;
+    left: auto;
+    top: auto;
+}
+
+.descricao {
+    max-width: 600px;
+    margin: 1% auto;
+}
+
+.descricao h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.descricao p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main {
+    max-width: max-content;
+    margin: 1% auto;
+}
+
+.planos {
+    display: flex;
+    width: auto;
+    flex-direction:row;
+    height: auto;
+}
+
+.free {
+    border: 1px solid #FFFFFF ;
+    border-radius: 1%;
+    padding: 1%;
+    margin: 1%;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+.free .primeira-linha {
+    margin-top: 2%;
+}
+
+.basico {
+    border: 1px solid #FFFFFF ;
+    border-radius: 1%;
+    padding: 1%;
+    margin: 1%;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+.basico .primeira-linha {
+    margin-top: 2%;
+}
+
+.profissional {
+    border: 1px solid #FFFFFF ;
+    border-radius: 1%;
+    padding: 1%;
+    margin: 1%;
+    margin-top: 0;
+    background-color: #FFFFFF;
+}
+
+.profissional .primeira-linha {
+    margin-top: 2%;
+}
+
+.preco {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.preco p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828799;
+}
+
+.detalhes {
+    max-width: 90%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828799;
+}
+
+.free .beneficios {
+    border-top: 0.1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+}
+
+.basico .beneficios {
+    border-top: 0.1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+}
+
+.profissional .beneficios {
+    border-top: 0.1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+}
+
+.beneficios ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.beneficios ul li {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.beneficios ul li p {
+    margin-left: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #828799;
+}
+
+.assinatura {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #828799;
+}
+
+.free .assinatura button {
+    width: -webkit-fill-available;
+    height: 49px;
+    border: 1px solid #828799;
+    border-radius: 10px;
+  
+    cursor: pointer;
+    color: #828799;
+    background-color: #FFFFFF;
+}
+
+.basico .assinatura button {
+    width: -webkit-fill-available;
+    height: 49px;
+    border: 1px solid #828799;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #828799;
+    background-color: #FFFFFF;
+}
+
+.profissional .assinatura  button {
+    width: -webkit-fill-available;
+    height: 49px;
+    border: 1px solid #828799;
+    border-radius: 10px; 
+    cursor: pointer;
+    color: #828799;
+    background-color: #FFFFFF;
+}
+
+.descricao h1:hover,
+.descricao p:hover {
+    transform: scale(1.04);
+}
+
+.descricao h1,
+.descricao p {
+    transition: transform 0.4s;
+}
+
+.descricao {
+    animation: appear .7s;
+}
+
+.planos .primeira-linha:hover,
+.planos .preco:hover,
+.planos .detalhes:hover,
+.planos .beneficios p:hover, 
+.planos .assinatura:hover {
+    transform: scale(1.04);
+}
+
+.planos .primeira-linha,
+.planos .preco,
+.planos .detalhes, 
+.planos .beneficios p,
+.planos .assinatura {
+    transition: transform 0.4s;
+}
+
+.planos {
+    animation: appear .7s;
+}
+
+.free:hover {
+    transform: scale(1.04);
+}
+
+.free {
+    transition: transform 0.4s;
+}
+
+.free {
+    animation: appear .7s;
+}
+
+.basico:hover {
+    transform: scale(1.04);
+}
+
+.basico {
+    transition: transform 0.4s;
+}
+
+.basico {
+    animation: appear .7s;
+}
+
+.profissional:hover {
+    transform: scale(1.04);
+}
+
+.profissional {
+    transition: transform 0.4s;
+}
+
+.profissional {
+    animation: appear .7s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 876px) {
+    .planos {
+        flex-direction: row;
+        margin: auto;
+
+    }
+}
+
+@media(max-width: 675px) {
+    .descricao h1 {
+     font-size: 26px;
+    }
+
+    .descricao p {
+        font-size: 16px;
+    }
+
+    b {
+        font-size: 12px;
+    }
+
+    .preco h1 {
+        font-size: 18px;
+    }
+
+    .preco p {
+        font-size: 10px;
+    }
+
+    .detalhes p {
+        font-size: 12px;
+    }
+
+    .beneficios ul li p {
+        font-size: 12px;
+    }
+
+    .assinatura button {
+        font-size: 8px;
+    }
+   }
+
+   @media(max-width: 300px) {
+    .descricao h1 {
+     font-size: 20px;
+    }
+
+    .descricao p {
+        font-size: 12px;
+    }
+
+    b {
+        font-size: 10px;
+    }
+
+    .preco h1 {
+        font-size: 12px;
+    }
+
+    .preco p {
+        font-size: 8px;
+    }
+
+    .detalhes p {
+        font-size: 8px;
+    }
+
+    .beneficios ul li p {
+        font-size: 6px;
+    }
+
+    .assinatura button {
+        font-size: 8px;
+    }
+   }
